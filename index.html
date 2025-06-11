@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <div class="container-fluid bg-dark py-4" style="height: 100vh;">
+        <h1 class="text-white text-center">Calculator</h1>
+        <div class="row ">
+            <div class="mx-auto col-4 bg-success text-white">
+                <form action="">
+                    <div class="mb-3">
+                        <label for="inputNumber" class="form-label">Value</label>
+                        <input id="display" type="text" class="form-control" id="number" readonly>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(1)">
+                1
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(2)">
+                2
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(3)">
+                3
+            </button>
+            <button class="col-1 bg-warning border text-center py-3" onclick="deleteItem()">
+                DEL
+            </button>
+        </div>
+        <div class="row justify-content-center">
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(4)">
+                4
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(5)">
+                5
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(6)">
+                6
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue('+')">
+                +
+            </button>
+        </div>
+        <div class="row justify-content-center">
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(7)">
+                7
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(8)">
+                8
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(9)">
+                9
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue('-')">
+                -
+            </button>
+        </div>
+        <div class="row justify-content-center">
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue(0)">
+                0
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue('.')">
+                .
+            </button>
+            <button class="col-1 bg-info border text-center py-3" onclick="getValue('/')">
+                /
+            </button>
+            <button class="col-1 bg-secondary border text-center py-3" onclick="cube()">
+                x³
+            </button>
+        </div>
+        <div class="row justify-content-center">
+            <button class="col-1 bg-danger border text-center py-3 text-white" onclick="reset()">
+                RESET
+            </button>
+            <button class="col-1 bg-success border text-center py-3 text-white" onclick="calculate()">
+                =
+            </button>
+            <button class="col-1 bg-info border text-center py-3 " onclick="getValue('*')">
+                *
+            </button>
+            <button class="col-1 bg-secondary border text-center py-3" onclick="square()">
+                x²
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
